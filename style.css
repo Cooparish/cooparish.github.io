@@ -383,6 +383,50 @@ footer p {
 }
 
 /* ============================================================
+   TUMBLEWEED — rolls across the hero/content boundary
+   ============================================================ */
+.tumbleweed-strip {
+  background: linear-gradient(to bottom, var(--nav-bg) 50%, var(--bg) 50%);
+  height: 56px;
+  position: relative;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Outer wrapper — travels left to right across the strip */
+.tumbleweed-track {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  animation: tumbleweed-move 20s ease-in-out 2s infinite;
+  animation-fill-mode: backwards;
+}
+
+/* Inner element — bounces and spins while the track moves */
+.tumbleweed {
+  width: 44px;
+  height: 44px;
+  display: block;
+  animation: tumbleweed-bounce 1.2s ease-in-out infinite;
+}
+
+@keyframes tumbleweed-move {
+  0%        { transform: translateX(-60px); opacity: 0; }
+  5%        { opacity: 0.85; }
+  55%       { opacity: 0.85; }
+  60%       { transform: translateX(calc(100vw + 60px)); opacity: 0; }
+  61%, 100% { transform: translateX(-60px); opacity: 0; }
+}
+
+@keyframes tumbleweed-bounce {
+  0%   { transform: translateY(0)    rotate(0deg); }
+  50%  { transform: translateY(-8px) rotate(180deg); }
+  100% { transform: translateY(0)    rotate(360deg); }
+}
+
+/* ============================================================
    RESPONSIVE — adjustments for phones and small screens
    ============================================================ */
 @media (max-width: 700px) {
