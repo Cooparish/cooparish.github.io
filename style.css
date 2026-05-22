@@ -386,20 +386,11 @@ footer p {
    TUMBLEWEED — rolls across the hero/content boundary
    ============================================================ */
 .tumbleweed-strip {
-  background: var(--nav-bg);
+  background: linear-gradient(to bottom, var(--nav-bg) 50%, var(--bg) 50%);
   height: 56px;
   position: relative;
   overflow: hidden;
   pointer-events: none;
-}
-
-.horizon {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
 }
 
 /* Outer wrapper — travels left to right across the strip */
