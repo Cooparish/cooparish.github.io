@@ -7,11 +7,11 @@
    ============================================================ */
 
 :root {
-  --bg:         #F5EDE0;   /* warm sand — main page background */
-  --bg-alt:     #EDE0CC;   /* slightly darker sand — alternating sections */
-  --nav-bg:     #1C1410;   /* near-black espresso — nav bar and footer */
-  --accent:     #C05C28;   /* burnt sienna / terracotta — buttons and highlights */
-  --sage:       #6B8C6A;   /* desert sage — secondary accent (use sparingly) */
+  --bg:         #FFE2BC;   /* Navajo White — warm desert sand, main background */
+  --bg-alt:     #F0CFA0;   /* golden sand — slightly darker, alternating sections */
+  --nav-bg:     #1B5E96;   /* deep Mojave sky blue — nav bar, hero, and footer */
+  --accent:     #C47E4F;   /* Golden Chestnut — rock face warm, buttons and highlights */
+  --sage:       #5A5022;   /* Olive Bark — deep desert sage, secondary accent */
   --text:       #2C1E12;   /* dark brown — main body text */
   --text-muted: #8A7060;   /* dusty taupe — captions, secondary text */
   --border:     #D4C0A0;   /* warm tan — borders and dividers */
@@ -366,7 +366,7 @@ p:last-child {
    ============================================================ */
 footer {
   background: var(--nav-bg);
-  color: var(--text-muted);
+  color: rgba(245, 237, 224, 0.75);
   text-align: center;
   padding: 2.5rem 2rem;
   font-size: 0.85rem;
@@ -378,7 +378,7 @@ footer a {
 }
 
 footer p {
-  color: var(--text-muted);
+  color: rgba(245, 237, 224, 0.75);
   margin: 0;
 }
 
@@ -386,11 +386,20 @@ footer p {
    TUMBLEWEED — rolls across the hero/content boundary
    ============================================================ */
 .tumbleweed-strip {
-  background: linear-gradient(to bottom, var(--nav-bg) 50%, var(--bg) 50%);
+  background: var(--nav-bg);
   height: 56px;
   position: relative;
   overflow: hidden;
   pointer-events: none;
+}
+
+.horizon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 /* Outer wrapper — travels left to right across the strip */
