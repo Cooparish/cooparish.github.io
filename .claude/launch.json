@@ -4,7 +4,7 @@
     {
       "name": "Static Server (PowerShell)",
       "runtimeExecutable": "powershell",
-      "runtimeArgs": ["-File", "C:\\Users\\coope\\Documents\\Github Repositories\\mojave-portfolio\\serve.ps1"],
+      "runtimeArgs": ["-File", "C:\\Users\\coope\\OneDrive\\Documents\\Github Repositories\\mojave-portfolio\\serve.ps1"],
       "port": 3000
     }
   ]

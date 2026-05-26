@@ -9,7 +9,7 @@
 :root {
   --bg:         #FFE2BC;   /* Navajo White — warm desert sand, main background */
   --bg-alt:     #F0CFA0;   /* golden sand — slightly darker, alternating sections */
-  --nav-bg:     #1B5E96;   /* deep Mojave sky blue — nav bar, hero, and footer */
+  --nav-bg:     #1C1812;   /* dark espresso — nav bar, hero, and footer */
   --accent:     #C47E4F;   /* Golden Chestnut — rock face warm, buttons and highlights */
   --sage:       #5A5022;   /* Olive Bark — deep desert sage, secondary accent */
   --text:       #2C1E12;   /* dark brown — main body text */
@@ -145,7 +145,7 @@ nav ul a.active {
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto;
-  opacity: 0.65;
+  color: var(--accent);
 }
 
 /* ============================================================
